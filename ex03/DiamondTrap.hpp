@@ -1,40 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/05 13:05:26 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 20:54:29 by kzennoun         ###   ########lyon.fr   */
+/*   Created: 2021/10/05 20:44:01 by kzennoun          #+#    #+#             */
+/*   Updated: 2021/10/05 21:56:03 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#ifndef DIAMONDTRAP_HPP
+# define DIAMONDTRAP_HPP
 
-# include "ClapTrap.hpp"
 # include <iostream>
 # include <string>
+# include "ScavTrap.hpp"
+# include "FragTrap.hpp"
 
-class ScavTrap : virtual public ClapTrap
+class DiamondTrap: public ScavTrap, public FragTrap
 {
 
 	public:
 
-		ScavTrap();
-		ScavTrap(  ScavTrap const & src );
-		ScavTrap(std::string const & name);
-		~ScavTrap();
+		DiamondTrap();
+		DiamondTrap( DiamondTrap const & src );
+		DiamondTrap(std::string const & name);
+		~DiamondTrap();
 
+		void whoAmI();
 		void	attack(std::string const & target) const;
-		void	guardGate();
-		ScavTrap &		operator=(  ScavTrap const & rhs );
+		DiamondTrap &		operator=( DiamondTrap const & rhs );
 
 	private:
+		std::string _name;
 
 };
 
-//std::ostream &			operator<<( std::ostream & o,  ScavTrap const & i );
+//std::ostream &			operator<<( std::ostream & o, DiamondTrap const & i );
 
-#endif /* *******************************************************  SCAVTRAP_H */
+#endif /* ***************************************************** DIAMONDTRAP_H */

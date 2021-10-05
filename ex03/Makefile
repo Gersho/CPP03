@@ -1,20 +1,20 @@
-SRCS		= ClapTrap.cpp ScavTrap.cpp main.cpp FragTrap.cpp
+SRCS		= ClapTrap.cpp ScavTrap.cpp main.cpp FragTrap.cpp DiamondTrap.cpp
 
 
 OBJS			= $(SRCS:.cpp=.o)
 
-NAME			= fragtrap
+NAME			= diamondtrap
 CC				= clang++
 RM				= rm -f
 CFLAGS			= --std=c++98 -Wall -Wextra -Werror
 
 all:			$(NAME)
 
-%.o: 			%.cpp	ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
+%.o: 			%.cpp	ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
 				$(CC) $(CFLAGS) -c $< -o $@
 
-$(NAME):		$(OBJS) ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
-				$(CC) $(CFLAGS) -IClapTrap.hpp -IScavTrap.hpp -IFragTrap.hpp -o $(NAME) $(OBJS)
+$(NAME):		$(OBJS) ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
+				$(CC) $(CFLAGS) -IClapTrap.hpp -IScavTrap.hpp -IFragTrap.hpp -IDiamondTrap.hpp -o $(NAME) $(OBJS)
 
 clean:			
 				$(RM) $(OBJS)
