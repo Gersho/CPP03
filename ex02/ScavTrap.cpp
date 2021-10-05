@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 13:05:21 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 16:42:33 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/10/05 16:42:41 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,7 @@ void	ScavTrap::attack(std::string const & target) const
 	<< ", causing " <<  _atkdmg << " points of damage!"
 	<< std::endl;
 }
+
 /*
 ** --------------------------------- ACCESSOR ---------------------------------
 */

@@ -1,40 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/05 13:05:26 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 16:41:29 by kzennoun         ###   ########lyon.fr   */
+/*   Created: 2021/10/05 16:25:06 by kzennoun          #+#    #+#             */
+/*   Updated: 2021/10/05 16:33:48 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
-# include "ClapTrap.hpp"
 # include <iostream>
 # include <string>
+# include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap
+class FragTrap : public ClapTrap
 {
 
 	public:
 
-		ScavTrap();
-		ScavTrap(  ScavTrap const & src );
-		ScavTrap(std::string const & name);
-		~ScavTrap();
+		FragTrap();
+		FragTrap( FragTrap const & src );
+		FragTrap(std::string const & name);
+		~FragTrap();
 
-		void	attack(std::string const & target) const;
-		void	guardGate();
-		ScavTrap &		operator=(  ScavTrap const & rhs );
+		void highFivesGuys(void);
+		FragTrap &		operator=( FragTrap const & rhs );
 
 	private:
 
 };
 
-//std::ostream &			operator<<( std::ostream & o,  ScavTrap const & i );
+//std::ostream &			operator<<( std::ostream & o, FragTrap const & i );
 
-#endif /* *******************************************************  SCAVTRAP_H */
+#endif /* ******************************************************** FRAGTRAP_H */
