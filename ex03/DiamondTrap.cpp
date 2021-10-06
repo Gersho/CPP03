@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 20:44:03 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 22:01:54 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/10/06 13:12:53 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,9 @@
 DiamondTrap::DiamondTrap(): _name("Aya")
 {
 	ClapTrap::_name = _name + "_clap_name";
-	std::cout << "FT hp: " << FragTrap::_hp << std::endl;
-	std::cout << "ST ep: " << ScavTrap::_ep << std::endl;
-	std::cout << "FT at: " << FragTrap::_atkdmg << std::endl;
-	_hp = FragTrap::_hp;
-	_ep = ScavTrap::_ep;
-	_atkdmg = FragTrap::_atkdmg;
+	_hp = 100;
+	_ep = 50;
+	_atkdmg = 30;
 	std::cout << "DiamondTrap " << _name << "(default) contructor called." << std::endl;
 }
 
@@ -37,12 +34,9 @@ DiamondTrap::DiamondTrap( const DiamondTrap & src )
 DiamondTrap::DiamondTrap(std::string const & name): _name(name)
 {
 	ClapTrap::_name = _name + "_clap_name";
-	std::cout << "FT hp: " << FragTrap::_hp << std::endl;
-	std::cout << "ST ep: " << ScavTrap::_ep << std::endl;
-	std::cout << "FT at: " << FragTrap::_atkdmg << std::endl;
-	_hp = FragTrap::_hp;
-	_ep = ScavTrap::_ep;
-	_atkdmg = FragTrap::_atkdmg;
+	_hp = 100;
+	_ep = 50;
+	_atkdmg = 30;
 	std::cout << "DiamondTrap " << _name << " string contructor called." << std::endl;
 }
 
