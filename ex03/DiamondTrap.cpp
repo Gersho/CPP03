@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 20:44:03 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/06 13:12:53 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/11/29 16:25:16 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,6 @@ DiamondTrap &				DiamondTrap::operator=( DiamondTrap const & rhs )
 	}
 	return *this;
 }
-
-// std::ostream &			operator<<( std::ostream & o, DiamondTrap const & i )
-// {
-// 	//o << "Value = " << i.getValue();
-// 	return o;
-// }
-
 
 /*
 ** --------------------------------- METHODS ----------------------------------

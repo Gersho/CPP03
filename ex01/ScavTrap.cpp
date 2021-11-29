@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 13:05:21 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 16:42:33 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/11/29 16:22:02 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,13 +61,6 @@ ScavTrap &				ScavTrap::operator=( ScavTrap const & rhs )
 	}
 	return *this;
 }
-
-// std::ostream &			operator<<( std::ostream & o,  ScavTrap const & i )
-// {
-// 	//o << "Value = " << i.getValue();
-// 	return o;
-// }
-
 
 /*
 ** --------------------------------- METHODS ----------------------------------

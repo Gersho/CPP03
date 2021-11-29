@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 16:25:16 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/06 13:12:24 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/11/29 16:25:25 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,13 +61,6 @@ FragTrap &				FragTrap::operator=( FragTrap const & rhs )
 	}
 	return *this;
 }
-
-// std::ostream &			operator<<( std::ostream & o, FragTrap const & i )
-// {
-// 	//o << "Value = " << i.getValue();
-// 	return o;
-// }
-
 
 /*
 ** --------------------------------- METHODS ----------------------------------

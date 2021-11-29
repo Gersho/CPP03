@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 18:24:38 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 12:59:42 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/11/29 16:23:13 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,17 +98,6 @@ void ClapTrap::takeDamage(unsigned int amount)
 	<< " going from " << prev
 	<< " to " << _hp
 	<< std::endl;
-/*
-	if (_hp <= 0)
-	{
-		std::cout
-		<< "ClapTrap " << _name << " dies"
-		<< std::endl;
-
-		// _name = "AAAAA";
-		// ClapTrap::~ClapTrap();
-	}
-	*/
 }
 
 void ClapTrap::beRepaired(unsigned int amount)

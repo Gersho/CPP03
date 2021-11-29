@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 16:25:06 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 20:54:17 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/11/29 16:25:30 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,4 @@ class FragTrap : virtual public ClapTrap
 	private:
 
 };
-
-//std::ostream &			operator<<( std::ostream & o, FragTrap const & i );
-
 #endif /* ******************************************************** FRAGTRAP_H */

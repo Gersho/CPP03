@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 13:05:26 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 16:43:01 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/11/29 16:21:52 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,5 @@ class ScavTrap : public ClapTrap
 	private:
 
 };
-
-//std::ostream &			operator<<( std::ostream & o,  ScavTrap const & i );
 
 #endif /* *******************************************************  SCAVTRAP_H */

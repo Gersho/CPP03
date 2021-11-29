@@ -6,7 +6,7 @@
 /*   By: kzennoun <kzennoun@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 20:44:01 by kzennoun          #+#    #+#             */
-/*   Updated: 2021/10/05 21:56:03 by kzennoun         ###   ########lyon.fr   */
+/*   Updated: 2021/11/29 16:24:55 by kzennoun         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,4 @@ class DiamondTrap: public ScavTrap, public FragTrap
 		std::string _name;
 
 };
-
-//std::ostream &			operator<<( std::ostream & o, DiamondTrap const & i );
-
 #endif /* ***************************************************** DIAMONDTRAP_H */
